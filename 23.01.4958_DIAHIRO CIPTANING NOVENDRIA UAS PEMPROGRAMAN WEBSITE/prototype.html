@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rekapitulasi Penilaian Mahasiswa</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #00008b;
+        color: white;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      .login-form,
+      .add-data-form,
+      .recap-table {
+        background-color: #2f13e6;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      .recap-table {
+        overflow-x: auto;
+      }
+      .table {
+        background-color: #1400ca;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">REKAPITULASI PENILAIAN MAHASISWA</h1>
+
+      <div class="login-form">
+        <h2>Halaman Login & Register</h2>
+        <h3>Dashboard Dosen</h3>
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Enter username"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Enter password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+
+      <div class="add-data-form">
+        <h2>Form Tambah Data</h2>
+        <form>
+          <div class="form-group">
+            <label for="studentName">Nama Mahasiswa</label>
+            <input
+              type="text"
+              class="form-control"
+              id="studentName"
+              placeholder="Enter student name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="nim">NIM</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nim"
+              placeholder="Enter NIM"
+            />
+          </div>
+          <div class="form-group">
+            <label for="class">Kelas</label>
+            <input
+              type="text"
+              class="form-control"
+              id="class"
+              placeholder="Enter class"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Tambah Data</button>
+        </form>
+      </div>
+
+      <div class="recap-table">
+        <h2>Halaman Rekapitulasi Nilai</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">NIM</th>
+              <th scope="col">Nama</th>
+              <th scope="col">Kelas</th>
+              <th scope="col">Kehadiran</th>
+              <th scope="col">Tugas</th>
+              <th scope="col">Responsi</th>
+              <th scope="col">UTS</th>
+              <th scope="col">UAS</th>
+              <th scope="col">Nilai Akhir</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>23.1.4958</td>
+              <td>DIAHIRO Ciptaning Novendria</td>
+              <td>D3 TEKNIK INFORMATIKA</td>
+              <td>Hadir ngerjain semua</td>
+              <td>Baik</td>
+              <td>80</td>
+              <td>85</td>
+              <td>70</td>
+              <td>90</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
